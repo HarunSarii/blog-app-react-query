@@ -29,8 +29,6 @@ export function PostDetail({ post }) {
     queryFn: () => fetchComments(post.id),
   });
 
-  console.log("commenthere", data);
-
   if (isLoading) return <h3>Loading...</h3>;
   if (error)
     return <h3>Upss, sth went wrong. error: {JSON.stringify(error)}</h3>;
