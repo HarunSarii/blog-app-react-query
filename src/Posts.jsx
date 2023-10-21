@@ -26,7 +26,7 @@ export function Posts() {
     });
   }, [currentPage, queryClient]);
 
-  const { data, isError, error, isLoading, isFetching } = useQuery(
+  const { data, isError, error, isLoading } = useQuery(
     {
       queryKey: ["posts", currentPage],
       currentPage,
